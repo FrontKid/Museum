@@ -9,7 +9,7 @@
       rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin="anonymous"
-      >
+    >
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Montserrat:wght@400;700&family=Roboto:wght@500&display=swap"
       rel="stylesheet"
@@ -25,28 +25,10 @@
       <div class="container">
 
         <div class="header__grid-wrapper">
-          <a href="#nav-bar">
-            <svg
-            class="header__burger"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_264_15)">
-                <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="#0F0E08">
-              </g>
-              <defs>
-                <clippath id="clip0_264_15">
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="white"
-                    >
-                </clippath>
-              </defs>
-            </svg>
+          <a class="header__icons-burger-link" href="#nav-bar">
+            <span class="header__icons-burger-link--border-top"></span>
+            <span class="header__icons-burger-link--border-mid"></span>
+            <span class="header__icons-burger-link--border-bot"></span>
           </a>
 
           <div class="logo header__logo">
@@ -74,7 +56,6 @@
 
     <aside id="nav-bar" class="nav-bar">
       <div class="nav-bar__wrapper container">
-
         <nav class="nav-bar__nav">
           <a class="nav-bar__close-icon"  href="#">
             <img src="./images/icons/close.svg" alt="close icon">
@@ -123,6 +104,57 @@
           до закриття музею.
         </p>
       </div>
+      <div class="nav-bar__open-bg"></div>
     </aside>
+
+    <main id="main">
+      <section class="events container">
+        <h2 class="section-title events__title">
+          Актуальні події
+        </h2>
+        <div class="events__wrapper-flex">
+          <a href="#" class="events__link-image">
+            <img
+              class="events__image"
+              src="./images/events/museum-picture1.jpg"
+              alt="Йду і повертаюсь"
+            >
+          </a>
+          <div class="events__text-wrap">
+            <div class="events__dates-wrap">
+              <span class="events__text-date">ВИСТАВКА</span>
+              <span class="events__text-date">26.08-29.11.2019</span>
+            </div>
+
+            <h3 class="events__text-title sub-title">Йду і повертаюсь</h3>
+            <p class="events__text-cont">
+              Національний художній музей України до 100 річчя від дня народження
+              видатної української художниці  Тетяни Яблонської  відкриває ретроспективну ювілейну виставку «І спогади і мрії».
+            </p>
+          </div>
+        </div>
+        <div class="events__wrapper-flex">
+          <a href="#" class="events__link-image">
+            <img
+              class="events__image"
+              src="./images/events/museum-picture2.jpg"
+              alt="І спогади і мрії"
+            >
+          </a>
+          <div class="events__text-wrap">
+            <div class="events__dates-wrap">
+              <span class="events__text-date">ВИСТАВКА</span>
+              <span class="events__text-date">26.08-29.11.2019</span>
+            </div>
+
+            <h3 class="events__text-title sub-title">І спогади і мрії</h3>
+            <p class="events__text-cont">
+              Національний художній музей України до 100 річчя від дня народження
+              видатної української художниці  Тетяни Яблонської  відкриває ретроспективну ювілейну виставку «І спогади і мрії».
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
