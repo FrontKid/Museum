@@ -1,0 +1,93 @@
+.subscribe {
+  padding: 88px 0;
+  background-image: url("../images/subscribe/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $white;
+
+  @include onTablet {
+    padding: 82px 0;
+  }
+
+  @include onTablet {
+    padding: 163px 0;
+  }
+
+  &__grid-wrapper {
+    @include pageGrid;
+  }
+
+  &__form,
+  &__text,
+  &__title {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  &__title {
+    color: inherit;
+    margin-bottom: 20px;
+
+    @include onTablet {
+      margin-bottom: 16px;
+    }
+  }
+  &__text {
+    text-align: center ;
+    font-size: 18px;
+    margin-bottom: 50px;
+
+    @include onTablet {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__lable {
+    display: flex;
+  }
+
+  &__email {
+    border-radius: 0;
+    border: none;
+    padding: 0 24px;
+
+    @include onTablet {
+      min-width: 374px;
+      margin-right: 16px;
+    }
+
+    @include onDesktop {
+      min-width: 470px;
+      margin-right: 30px;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 0;
+    background-color: $orange;
+    border: none;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-top: 2px solid $black;
+      border-right: 2px solid $black;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-80%, -45%) rotate(45deg);
+    }
+
+    @include onTablet {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
