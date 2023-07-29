@@ -61,6 +61,10 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-align: center;
+
+  @include onTablet {
+    text-align: start;
+  }
 }
 
 @mixin btn-sqr ($size, $color) {
